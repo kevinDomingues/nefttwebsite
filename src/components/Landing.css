@@ -1,0 +1,72 @@
+.landingContainer {
+    background: #003f53;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 100vh;
+    position: relative;
+    top: -80px;
+}
+
+.landingBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 112%;
+    overflow: hidden;
+}
+
+.videoBg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #003f53;
+}
+
+.landingContent {
+    max-width: 1200px;
+    position: absolute;
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landingContent h1 {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+
+}
+
+.landingContent p {
+    margin-top: 24px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 44px;
+}
+
+@media screen and (max-width: 768px) {
+    .landingContent h1 {
+        font-size: 40px;
+    }  
+    .landingContent p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .landingContent h1 {
+        font-size: 32px;
+    }
+    .landingContent p {
+        font-size: 18px;
+    }
+}
